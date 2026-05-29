@@ -48,5 +48,4 @@ The first physical prototype has been sent off for manufacture. This repository 
 
 ## Note
 
-This is a personal project
-Copy at your own risk, very likely doesn't work yet
+This is a personal project. Copy at your own risk, very likely doesn't work yet
