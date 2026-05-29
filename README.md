@@ -45,3 +45,8 @@ The first physical prototype has been sent off for manufacture. This repository 
 - KiCad schematic and PCB layout files
 - Gerber files for manufacture
 - Bill of materials
+
+## Note
+
+This is a personal project
+Copy at your own risk, very likely doesn't work yet
