@@ -1,0 +1,7 @@
+2026-Jun-01 12:51:19
+Computer name:	LNOTTI-LEGION
+Number of cores used in calculation:	24
+Configuration name:	Default
+Project name:	Project(1)
+
+Warnings on last iteration: 

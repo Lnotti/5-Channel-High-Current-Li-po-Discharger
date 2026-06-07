@@ -1,0 +1,55 @@
+{
+    "version": 0,
+    "model_name": "AssemblyV1.0.0.SLDASM",
+    "project_name": "Project(1)",
+    "config_name": "Default",
+    "project_path": "C:\\Users\\Luca Notti\\Desktop\\Lipo Discharger\\Solidworks\\1\\1.xmlconfig",
+    "finished": true,
+    "mesh": {
+        "cells_total": 44375,
+        "cells_fluid": 32492,
+        "cells_solid": 11883,
+        "cells_fluid_containing_solid": 10758
+    },
+    "telemetry": {
+        "prepare_geometry_finished": "12:50:09-0700",
+        "prepare_geometry_total_time": 1,
+        "cpu_time_solver_total": 72,
+        "iteration": 241,
+        "travel": 3.7762572049078567,
+        "phys_time": 0.0,
+        "time_step": 0.0,
+        "last_iteration_finished": "12:51:19-0700",
+        "cpu_time_per_last_iter": 0,
+        "cpu_time_left": 1,
+        "iterations_per_travel": 64
+    },
+    "goals": [],
+    "settings": {
+        "default_fluids": [
+            "Air"
+        ],
+        "analysis_type": "external",
+        "heat_conduction_in_solids": true,
+        "radiation": false,
+        "time_dependent": false,
+        "gravity": true,
+        "flow_type": "laminar and turbulent",
+        "cavitation": false,
+        "high_mach_number": true,
+        "free_surface": false,
+        "structural": false,
+        "electromagnetism": false
+    },
+    "system_info": {
+        "product_name": "Flow Simulation 2026  x64 / 7071 / SOLVER ver. efd_dev.5608_04.02.2022+HMN_Inlet_Rework_V1+HMN_Inlet_Rework_V2",
+        "cad_version": "SOLIDWORKS 2026 SP2.1",
+        "computer_name": "LNOTTI-LEGION",
+        "user_name": "Luca Notti",
+        "os": "Windows 11 (or higher) (Version 10.0.26200)",
+        "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+        "number_of_cores": 24,
+        "memory_avail": 17681,
+        "memory_total": 32189
+    }
+}

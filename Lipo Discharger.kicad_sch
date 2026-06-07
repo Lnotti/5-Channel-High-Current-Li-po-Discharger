@@ -160,7 +160,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Schottky"
+		(symbol "Device:D"
 			(pin_numbers
 				(hide yes)
 			)
@@ -183,7 +183,7 @@
 					)
 				)
 			)
-			(property "Value" "D_Schottky"
+			(property "Value" "D"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -215,7 +215,7 @@
 					)
 				)
 			)
-			(property "Description" "Schottky diode"
+			(property "Description" "Diode"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -226,7 +226,29 @@
 					)
 				)
 			)
-			(property "ki_keywords" "diode Schottky"
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -248,10 +270,10 @@
 					)
 				)
 			)
-			(symbol "D_Schottky_0_1"
+			(symbol "D_0_1"
 				(polyline
 					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+						(xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -286,7 +308,7 @@
 					)
 				)
 			)
-			(symbol "D_Schottky_1_1"
+			(symbol "D_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -309,172 +331,6 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:D_TVS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_TVS"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Bidirectional transient-voltage-suppression diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode TVS thyrector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "D_TVS_0_1"
-				(polyline
-					(pts
-						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_TVS_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -670,6 +526,196 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -803,351 +849,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "MP2359DJ-LF-Z:MP2359DJ-LF-Z"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -10.16 10.668 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "MP2359DJ-LF-Z"
-				(at -10.16 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "MP2359DJ-LF-Z:SOT95P280X100-6N"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Buck Switching Regulator IC Positive Adjustable 0.81V 1 Output 1.2A SOT-23-6 Thin, TSOT-23-6"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MF" "Monolithic Power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "SNAPEDA_PACKAGE_ID" "14775"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Package" "TSOT-23-6 Monolithic Power Systems"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/MP2359DJ-LF-Z/Monolithic+Power+Systems/view-part/?ref=eda"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "STANDARD" "IPC 7351B"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "PARTREV" "1.21"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/MP2359DJ-LF-Z/Monolithic+Power+Systems/view-part/?ref=snap"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MP" "MP2359DJ-LF-Z"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1222930&manufacturer=Monolithic Power&part_name=MP2359DJ-LF-Z&search_term=mp2359"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER" "Monolithic Power Systems Inc."
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(symbol "MP2359DJ-LF-Z_0_0"
-				(rectangle
-					(start -10.16 -10.16)
-					(end 10.16 10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 15.24 7.62 180)
-					(length 5.08)
-					(name "BST"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -7.62 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 15.24 -2.54 180)
-					(length 5.08)
-					(name "FB"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 2.54 0)
-					(length 5.08)
-					(name "EN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 7.62 0)
-					(length 5.08)
-					(name "IN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 2.54 180)
-					(length 5.08)
-					(name "SW"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1298,6 +999,212 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_Switching:AP63205WU"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -7.62 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AP63205WU"
+				(at 2.54 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "2A Buck DC/DC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TSOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AP63205WU_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AP63205WU_1_1"
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "BST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1725,7 +1632,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:-BATT"
+		(symbol "power:GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -1740,7 +1647,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1750,8 +1657,8 @@
 					)
 				)
 			)
-			(property "Value" "-BATT"
-				(at 0 3.556 0)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1782,7 +1689,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"-BATT\""
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1793,7 +1700,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power battery"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1804,10 +1711,10 @@
 					)
 				)
 			)
-			(symbol "-BATT_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -1817,22 +1724,10 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.762 1.27) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 			)
-			(symbol "-BATT_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
-					(at 0 0 90)
+					(at 0 0 270)
 					(length 0)
 					(name ""
 						(effects
@@ -1969,222 +1864,346 @@
 		)
 	)
 	(junction
-		(at 82.55 105.41)
+		(at 96.52 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "064a2839-fdc8-4ed5-bae1-4743224c0a71")
+		(uuid "0a3f7b3f-0554-4a22-88e6-324b772c0edd")
 	)
 	(junction
-		(at 119.38 124.46)
+		(at 124.46 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1d8f653b-6c28-4f70-a677-200689a3a367")
+		(uuid "25c25f30-ae66-4f86-ad68-39387c61b706")
 	)
 	(junction
-		(at 135.89 55.88)
+		(at 137.16 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "20b91c5f-fa1d-4c47-ba19-4f2054436398")
+		(uuid "26a4efb2-613b-4209-b92a-cf0cd912de97")
 	)
 	(junction
-		(at 132.08 92.71)
+		(at 87.63 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2dafc4a3-534c-4e01-8dc2-1733716fa642")
+		(uuid "2833c53f-8849-4a2e-b679-0179629cb420")
 	)
 	(junction
-		(at 123.19 67.31)
+		(at 95.25 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2ee21adb-1747-429b-8109-a3ab98389108")
+		(uuid "2fd509e0-7cb9-4084-b3ca-12bf738242f6")
 	)
 	(junction
-		(at 146.05 92.71)
+		(at 38.1 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "384b992c-aaea-4ff6-8b23-e40b16d5214e")
+		(uuid "3909e4a6-457b-43e3-8924-2d723b733d73")
 	)
 	(junction
-		(at 114.3 55.88)
+		(at 73.66 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3f857936-10bb-4f33-a090-52df9e0250a1")
+		(uuid "55712b2a-0009-400f-b128-426a7d090776")
 	)
 	(junction
-		(at 82.55 92.71)
+		(at 92.71 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4eee4607-7c97-435f-8d58-e263aa1cf0c7")
+		(uuid "649b963c-2b24-4b99-98e0-7b7974cb91fe")
 	)
 	(junction
-		(at 114.3 92.71)
+		(at 29.21 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "78364319-ca06-4907-a32a-0aa7534179b7")
+		(uuid "651cdccb-902e-4ffa-b85f-0ac43645e22e")
 	)
 	(junction
-		(at 123.19 69.85)
+		(at 54.61 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a022d179-7086-4019-81b3-dd371ccccc48")
+		(uuid "69367f50-36fd-4db5-881f-274cb8bd75af")
 	)
 	(junction
-		(at 139.7 92.71)
+		(at 54.61 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "adf9f6e5-87ed-4ffc-aa09-cfefe1c53154")
+		(uuid "7f5765ca-25b9-4178-ab90-088078641891")
 	)
 	(junction
-		(at 43.18 83.82)
+		(at 85.09 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cc07240f-4b2e-458c-a09b-5705620d7651")
+		(uuid "a7ac7e2a-df16-4687-9d07-bbdec75df1b0")
 	)
 	(junction
-		(at 90.17 92.71)
+		(at 137.16 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fd520329-4737-4093-ae64-a73925130cfb")
+		(uuid "c53d4d60-eedf-4799-80f5-b7c6f4edc934")
 	)
 	(junction
-		(at 45.72 83.82)
+		(at 143.51 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fde50cd0-2896-45a0-a427-1dbd2320bcaa")
+		(uuid "d3c36f6b-5491-4d3a-ae81-85b90bb405eb")
+	)
+	(junction
+		(at 113.03 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e304faec-c91a-4c61-b90a-31a29a5cb8f0")
+	)
+	(junction
+		(at 101.6 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edc69306-b663-4b54-ae4c-82f89af4cbf1")
+	)
+	(junction
+		(at 33.02 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2296179-428c-49c5-90f7-4f334ab54b98")
+	)
+	(junction
+		(at 90.17 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc3a22fc-36fe-4204-bcaf-bae8f6ad2d78")
 	)
 	(wire
 		(pts
-			(xy 115.57 55.88) (xy 114.3 55.88)
+			(xy 64.77 93.98) (xy 73.66 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "004d79b9-53b0-47cc-a06f-4fc3f93421cd")
+		(uuid "0097cfb5-0f89-4c17-965f-254cfeaa0719")
 	)
 	(wire
 		(pts
-			(xy 119.38 134.62) (xy 119.38 140.97)
+			(xy 64.77 96.52) (xy 85.09 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0874f8ab-01bb-48be-b492-35acf9c77b91")
+		(uuid "069ddb15-9c2d-401d-ad11-65d872b87012")
 	)
 	(wire
 		(pts
-			(xy 123.19 69.85) (xy 123.19 74.93)
+			(xy 87.63 93.98) (xy 92.71 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "10d016a1-8a27-4f92-9980-9fe87e5b88c7")
+		(uuid "0e5dd82a-dc4b-4fd4-accb-dcfa8b9431cc")
 	)
 	(wire
 		(pts
-			(xy 123.19 63.5) (xy 123.19 67.31)
+			(xy 87.63 109.22) (xy 90.17 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "20cd7209-35fa-44fe-b009-dec76fc339e9")
+		(uuid "1124c785-4b49-457d-a014-434bab075c39")
 	)
 	(wire
 		(pts
-			(xy 114.3 92.71) (xy 132.08 92.71)
+			(xy 95.25 93.98) (xy 102.87 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "20f72294-8b25-425f-bfbd-8db9b2c7f1a2")
+		(uuid "13ec3adc-dbbe-4c80-b6d2-93a1c93c4dcc")
 	)
 	(wire
 		(pts
-			(xy 119.38 124.46) (xy 119.38 127)
+			(xy 133.35 129.54) (xy 138.43 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "23ea44aa-1736-413a-b28e-cacd68b956a2")
+		(uuid "17ab06bf-75ef-4975-a8a7-0bf905d4450e")
 	)
 	(wire
 		(pts
-			(xy 119.38 114.3) (xy 146.05 114.3)
+			(xy 143.51 39.37) (xy 143.51 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "251855e1-d23d-4eb1-a1a7-18c696574949")
+		(uuid "18045d8b-c9ba-45b7-9c80-f0e46e7883c3")
 	)
 	(wire
 		(pts
-			(xy 82.55 92.71) (xy 76.2 92.71)
+			(xy 54.61 101.6) (xy 54.61 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "25cb211d-8c89-42bd-b155-aace2e9c94d3")
+		(uuid "1bd179fb-8544-47df-8bb8-4bf94cedfa6f")
 	)
 	(wire
 		(pts
-			(xy 63.5 60.96) (xy 63.5 64.77)
+			(xy 38.1 96.52) (xy 38.1 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2cb93831-060b-4977-a6b6-ed2fea9fbcf9")
+		(uuid "25119363-893a-4afd-86cb-b71be989d09d")
 	)
 	(wire
 		(pts
-			(xy 111.76 55.88) (xy 111.76 53.34)
+			(xy 54.61 109.22) (xy 54.61 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33fe14c4-db25-436e-a809-55511f0310f3")
+		(uuid "27908a48-9134-432b-9f6e-91e387e3129b")
 	)
 	(wire
 		(pts
-			(xy 82.55 99.06) (xy 82.55 105.41)
+			(xy 29.21 90.17) (xy 29.21 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "36af20df-94a6-403d-bf91-808c0e9b52ce")
+		(uuid "29264a26-2e8d-47db-a1c0-22cf59359b97")
 	)
 	(wire
 		(pts
-			(xy 82.55 91.44) (xy 82.55 92.71)
+			(xy 133.35 157.48) (xy 138.43 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c58dae1-c248-476f-95f9-916b5cf669cf")
+		(uuid "3c4febca-fa5d-4654-9e04-9dd17de215de")
 	)
 	(wire
 		(pts
-			(xy 90.17 73.66) (xy 90.17 76.2)
+			(xy 83.82 93.98) (xy 85.09 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f2d87e2-270f-4c2f-a849-12029d77d6cf")
+		(uuid "3df0459e-e026-4022-8030-a5a7a6bf553d")
 	)
 	(wire
 		(pts
-			(xy 78.74 59.69) (xy 78.74 64.77)
+			(xy 91.44 44.45) (xy 96.52 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fbdfa7a-ea18-458c-b5f9-c1b3ae162cb8")
+	)
+	(wire
+		(pts
+			(xy 96.52 60.96) (xy 113.03 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41d87958-23c2-4e18-823c-2ef58398b43a")
+	)
+	(wire
+		(pts
+			(xy 33.02 91.44) (xy 33.02 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c680d4-a416-4570-ad76-08504801fa3d")
+	)
+	(wire
+		(pts
+			(xy 143.51 44.45) (xy 137.16 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47052c9c-cdd7-4444-959f-adae608dcea4")
+	)
+	(wire
+		(pts
+			(xy 133.35 182.88) (xy 138.43 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47e37e28-ca7c-4852-b275-6ad483a0f930")
+	)
+	(wire
+		(pts
+			(xy 116.84 26.67) (xy 124.46 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a7d3e07-3df5-4497-bc20-9423484f580a")
+	)
+	(wire
+		(pts
+			(xy 133.35 81.28) (xy 137.16 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b40d4b4-1711-467a-80af-89238abeeeb2")
+	)
+	(wire
+		(pts
+			(xy 92.71 107.95) (xy 92.71 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c023ebd-f188-41aa-a5cd-b4cddc0e7de7")
+	)
+	(wire
+		(pts
+			(xy 44.45 96.52) (xy 38.1 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e3fe20a-b7fb-42f0-bead-19b2995526d7")
+	)
+	(wire
+		(pts
+			(xy 66.04 86.36) (xy 73.66 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e4b715e-995d-4646-b838-06f53f0ae1b4")
+	)
+	(wire
+		(pts
+			(xy 33.02 104.14) (xy 33.02 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2194,237 +2213,327 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 124.46) (xy 119.38 124.46)
+			(xy 143.51 44.45) (xy 146.05 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5535e7ed-395a-4f76-aee8-1c363c6587a9")
+		(uuid "51c267ae-ab8a-4eac-9f92-efcaab673cc3")
 	)
 	(wire
 		(pts
-			(xy 90.17 92.71) (xy 82.55 92.71)
+			(xy 133.35 179.07) (xy 138.43 179.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "592cc800-9e06-4fbf-9c01-ee1a6a85ce14")
+		(uuid "52a939cb-7f39-4295-821a-7a00400f7d0d")
 	)
 	(wire
 		(pts
-			(xy 132.08 100.33) (xy 132.08 104.14)
+			(xy 153.67 44.45) (xy 157.48 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5cc13a86-ae8a-42dc-9e20-5a162d4daa16")
+		(uuid "53dd0f07-2a5b-43fb-842e-328e7e978f04")
 	)
 	(wire
 		(pts
-			(xy 82.55 105.41) (xy 85.09 105.41)
+			(xy 92.71 93.98) (xy 95.25 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "68525a75-bd0d-4f68-99d8-6ae6965dbac3")
+		(uuid "5ac0ec51-d1a9-4290-8109-0b7822887cce")
 	)
 	(wire
 		(pts
-			(xy 76.2 73.66) (xy 90.17 73.66)
+			(xy 113.03 52.07) (xy 113.03 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6be5647f-4f7f-4b6f-975e-40ed31493857")
+		(uuid "61f54b6b-fb73-476b-87c8-2abe92ad0f77")
 	)
 	(wire
 		(pts
-			(xy 114.3 100.33) (xy 114.3 105.41)
+			(xy 33.02 91.44) (xy 38.1 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "71b17f8d-fd0a-4884-9a48-2cb1c1570ffa")
+		(uuid "62d117ad-52f7-4864-8dd7-82af3e6929ce")
 	)
 	(wire
 		(pts
-			(xy 82.55 105.41) (xy 82.55 110.49)
+			(xy 66.04 91.44) (xy 66.04 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "74970034-9f18-4947-bbd5-29257d522a72")
+		(uuid "6ceeca6e-4960-456e-9a29-c1a3d9500b8d")
 	)
 	(wire
 		(pts
-			(xy 135.89 55.88) (xy 135.89 59.69)
+			(xy 124.46 26.67) (xy 124.46 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78957e37-1caf-4446-9ccb-c3f939085b56")
+		(uuid "6d954fa0-d4fe-429f-8efb-66b7da174c87")
 	)
 	(wire
 		(pts
-			(xy 45.72 88.9) (xy 45.72 83.82)
+			(xy 90.17 109.22) (xy 90.17 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8143e01b-92a0-4282-8706-c04c418290e2")
+		(uuid "7b1b83bd-5063-40c0-b9bc-86d0df37f4ce")
 	)
 	(wire
 		(pts
-			(xy 76.2 73.66) (xy 76.2 83.82)
+			(xy 64.77 91.44) (xy 66.04 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "96c9a4c5-b620-48fa-adb2-176c91b31549")
+		(uuid "89262e26-ca17-4137-9499-fa6342aeeaba")
 	)
 	(wire
 		(pts
-			(xy 76.2 99.06) (xy 82.55 99.06)
+			(xy 113.03 60.96) (xy 137.16 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9dd79d38-5062-4cb9-9339-47d669fcfc44")
+		(uuid "89c249dc-e5b4-4d09-9e82-d0d86f8f4993")
 	)
 	(wire
 		(pts
-			(xy 76.2 92.71) (xy 76.2 88.9)
+			(xy 133.35 153.67) (xy 138.43 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a72f5c5f-2535-4519-a316-c83e4d37764c")
+		(uuid "89c3c7de-6054-4afe-aaf4-f1dc6226d730")
 	)
 	(wire
 		(pts
-			(xy 91.44 92.71) (xy 90.17 92.71)
+			(xy 101.6 44.45) (xy 105.41 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ab5f4eb3-405d-49c6-813b-5fa1e24bd8cd")
+		(uuid "968ce375-87eb-4b98-bf40-4fab9ae38b8a")
 	)
 	(wire
 		(pts
-			(xy 99.06 92.71) (xy 114.3 92.71)
+			(xy 137.16 46.99) (xy 137.16 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "abfa631c-720b-4aa2-b5e9-a2e9d07f4148")
+		(uuid "9738cc7b-f557-403e-96b6-bf9bb829ec6d")
 	)
 	(wire
 		(pts
-			(xy 76.2 93.98) (xy 101.6 93.98)
+			(xy 101.6 26.67) (xy 101.6 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "afc3ebbf-c54c-4eec-821b-fd6e69ba960a")
+		(uuid "9a65600e-c9d9-4c75-aacf-2789d6ff5259")
 	)
 	(wire
 		(pts
-			(xy 82.55 82.55) (xy 82.55 83.82)
+			(xy 133.35 133.35) (xy 138.43 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b0787506-6f04-4d63-ab41-3cfad237852b")
+		(uuid "9a90ba36-4ff1-4b24-a9c6-878db780a565")
 	)
 	(wire
 		(pts
-			(xy 123.19 69.85) (xy 113.03 69.85)
+			(xy 120.65 44.45) (xy 124.46 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b51a070a-8b49-480c-a0cf-2fabe6b01650")
+		(uuid "9e2a4a73-7843-4174-953c-3d2771a24472")
 	)
 	(wire
 		(pts
-			(xy 139.7 92.71) (xy 146.05 92.71)
+			(xy 137.16 54.61) (xy 137.16 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b53556d0-58af-4f40-9ec2-7508b670e26b")
+		(uuid "a45fc512-d480-4170-ab6d-36b8fdaa104f")
 	)
 	(wire
 		(pts
-			(xy 101.6 93.98) (xy 101.6 124.46)
+			(xy 96.52 44.45) (xy 101.6 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b95e1860-830f-4b5c-8f75-8c0734f55cc1")
+		(uuid "b28cf87b-f618-49d5-9bf1-b4a1012bf358")
 	)
 	(wire
 		(pts
-			(xy 63.5 46.99) (xy 63.5 53.34)
+			(xy 96.52 52.07) (xy 96.52 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b997a61d-7995-454b-8055-fb6312b05375")
+		(uuid "bb00ac83-ebcc-4ab8-a718-1b0421d2b030")
 	)
 	(wire
 		(pts
-			(xy 130.81 55.88) (xy 135.89 55.88)
+			(xy 29.21 91.44) (xy 33.02 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c26ef3ec-610b-408d-97fa-6ab4377aee9e")
+		(uuid "c1a9fec2-3a92-4723-84bc-4ed9ebd386cc")
 	)
 	(wire
 		(pts
-			(xy 113.03 62.23) (xy 114.3 62.23)
+			(xy 87.63 107.95) (xy 87.63 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c3a009a2-86b4-4849-9bc0-692b8cd1df2f")
+		(uuid "c25c5ebe-924d-4a30-b4c2-3a3a0fb0631d")
 	)
 	(wire
 		(pts
-			(xy 135.89 55.88) (xy 138.43 55.88)
+			(xy 92.71 93.98) (xy 92.71 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d5404de6-8d09-4fd8-a9e6-3b4daf132414")
+		(uuid "c2c850de-70db-467f-b0ae-1c5be0cf9b9d")
 	)
 	(wire
 		(pts
-			(xy 78.74 45.72) (xy 78.74 52.07)
+			(xy 109.22 26.67) (xy 101.6 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c92d5855-5e13-4213-9809-7d2ea8be6434")
+	)
+	(wire
+		(pts
+			(xy 133.35 109.22) (xy 138.43 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c932344f-6664-417c-9ff1-b7f61483fb00")
+	)
+	(wire
+		(pts
+			(xy 85.09 93.98) (xy 87.63 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9a37d84-ba81-46ef-9881-091164cbe1a2")
+	)
+	(wire
+		(pts
+			(xy 137.16 60.96) (xy 157.48 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb8712fe-4945-4109-b7fe-0581c5582df2")
+	)
+	(wire
+		(pts
+			(xy 133.35 85.09) (xy 137.16 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cce36e6b-6406-4e4b-8891-9ae4db3f9d64")
+	)
+	(wire
+		(pts
+			(xy 38.1 91.44) (xy 44.45 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd1ca26f-e029-4d7e-be36-e5da826d9d4a")
+	)
+	(wire
+		(pts
+			(xy 157.48 44.45) (xy 157.48 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf27bf34-000f-4869-82b4-6f9eaefe6f41")
+	)
+	(wire
+		(pts
+			(xy 87.63 100.33) (xy 87.63 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d03804dc-f240-4239-abfc-5c0a63e09b34")
+	)
+	(wire
+		(pts
+			(xy 113.03 60.96) (xy 113.03 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9cd9dd5-ed0a-41a0-bee4-aae9001397ac")
+	)
+	(wire
+		(pts
+			(xy 29.21 86.36) (xy 29.21 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2434,117 +2543,317 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 62.23) (xy 114.3 55.88)
+			(xy 124.46 44.45) (xy 137.16 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e25513cd-69a0-4e8f-a7cc-f47b46857d13")
+		(uuid "e6f52c2e-6004-4367-ace8-93c54b4dca2f")
 	)
 	(wire
 		(pts
-			(xy 39.37 83.82) (xy 39.37 77.47)
+			(xy 157.48 53.34) (xy 157.48 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e449ce5e-20ea-45fa-8d70-684dfa4dea5a")
+		(uuid "e9fd130c-fb70-4b94-ad5d-5769ec358612")
 	)
 	(wire
 		(pts
-			(xy 119.38 121.92) (xy 119.38 124.46)
+			(xy 133.35 105.41) (xy 138.43 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e9d0e1d9-74b8-45eb-b686-9b863dbde18f")
+		(uuid "f4cba645-8c09-4d1a-bdc9-f607ba8841ef")
 	)
 	(wire
 		(pts
-			(xy 39.37 83.82) (xy 43.18 83.82)
+			(xy 85.09 96.52) (xy 85.09 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eb3f014c-9600-4aa4-b306-562049bd0ab2")
+		(uuid "f5db6db3-8749-4e7c-9260-eef225bf867e")
 	)
 	(wire
 		(pts
-			(xy 132.08 92.71) (xy 139.7 92.71)
+			(xy 73.66 93.98) (xy 76.2 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ecd84f65-52c8-48bf-965f-f27156f9877c")
+		(uuid "f7228a72-7e99-4375-85a4-dc0bd1ef5938")
 	)
 	(wire
 		(pts
-			(xy 135.89 67.31) (xy 123.19 67.31)
+			(xy 54.61 111.76) (xy 90.17 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f1560347-7baa-40ce-b012-50d31fc50ed8")
+		(uuid "f9b860db-a2f3-4ec6-a949-8b0c6cf1867d")
 	)
 	(wire
 		(pts
-			(xy 114.3 55.88) (xy 111.76 55.88)
+			(xy 90.17 109.22) (xy 92.71 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f3c6f2e1-1ba2-4aa2-ae59-56031b534955")
+		(uuid "fcbf45c8-accf-4290-8772-05310ea99c81")
 	)
-	(wire
-		(pts
-			(xy 43.18 83.82) (xy 45.72 83.82)
+	(global_label "GATE_P3"
+		(shape input)
+		(at 138.43 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "08667437-143f-4900-b81a-05d4be46f466")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.3375 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(uuid "f3ef1ab7-7311-4af3-b8ab-9227ff6abb89")
 	)
-	(wire
-		(pts
-			(xy 123.19 67.31) (xy 123.19 69.85)
+	(global_label "GATE_P1"
+		(shape input)
+		(at 137.16 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "267f4f73-1504-40ad-970b-9e9a0f920e40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.0675 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(uuid "f9348d73-9dd1-4f18-ac41-7531368a10bb")
 	)
-	(wire
-		(pts
-			(xy 90.17 83.82) (xy 90.17 92.71)
+	(global_label "GATE_P4"
+		(shape input)
+		(at 138.43 157.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "2a874487-1a78-4476-b0ac-b1501068e484")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.3375 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(uuid "fb8c62cf-9525-4b36-9065-af3538d116c2")
 	)
-	(wire
-		(pts
-			(xy 146.05 114.3) (xy 146.05 92.71)
+	(global_label "GATE_P2"
+		(shape input)
+		(at 138.43 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "477a6191-2a08-420f-a888-96d1c8d1ceaf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.3375 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(uuid "fbf8f160-4c5e-4415-b87d-73189d98308e")
+	)
+	(global_label "ADC_P2"
+		(shape input)
+		(at 138.43 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0dfdab3-d251-4b48-accb-e8f669b02b0b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.4909 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "ADC_P4"
+		(shape input)
+		(at 138.43 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bb6e50fc-9205-49c7-bea0-35e6b0eff0c0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.4909 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "ADC_P1"
+		(shape input)
+		(at 137.16 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d9b7e249-abc6-4b13-a1f4-b02a74d2770d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.2209 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "ADC_P3"
+		(shape input)
+		(at 138.43 129.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ddc5fde2-4b7b-44ca-a8c0-b5d8f7c753f9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.4909 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GATE_P5"
+		(shape input)
+		(at 138.43 182.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eabefca6-5d87-4aa2-a92a-6df62026a153")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.3375 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "ADC_P5"
+		(shape input)
+		(at 138.43 179.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eb48ea02-1f7e-498a-b591-6c1e71b9f1bb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.4909 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 66.04 123.19 0)
+		(at 102.87 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2553,9 +2862,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "178d75e5-93cb-47c4-a746-ceb7ea21214d")
-		(property "Reference" "#PWR017"
-			(at 66.04 127 0)
+		(uuid "18f2cc87-f6cf-42a0-8f0c-8c88f4e1c026")
+		(property "Reference" "#PWR03"
+			(at 102.87 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2566,7 +2875,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 66.04 118.11 0)
+			(at 102.87 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2576,7 +2885,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 123.19 0)
+			(at 102.87 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2587,7 +2896,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 123.19 0)
+			(at 102.87 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2598,7 +2907,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 66.04 123.19 0)
+			(at 102.87 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2609,90 +2918,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ae9a7ea4-981c-4d8e-a08f-74e44883002b")
+			(uuid "b170b147-bf8b-492c-8cb6-df0373f6d8c1")
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 63.5 64.77 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1873c9a8-20f5-418d-872f-e69b3a9545e5")
-		(property "Reference" "#PWR02"
-			(at 63.5 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 63.5 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 63.5 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7bd1e92f-13ea-4558-9125-d3b53029ef98")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -2700,7 +2931,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 66.04 127 0)
+		(at 96.52 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2709,9 +2940,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "19a2be08-f45b-4295-a9a1-5d100cd4de40")
-		(property "Reference" "C7"
-			(at 69.85 125.7299 0)
+		(uuid "24ec18fe-cfa8-4cb5-a81e-3d818a62d696")
+		(property "Reference" "C5"
+			(at 100.33 46.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2721,8 +2952,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 69.85 128.2699 0)
+		(property "Value" "10µF"
+			(at 100.33 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2733,7 +2964,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 67.0052 130.81 0)
+			(at 97.4852 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2744,7 +2975,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 127 0)
+			(at 96.52 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2755,7 +2986,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 66.04 127 0)
+			(at 96.52 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2766,23 +2997,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "fe18a8f3-4ad6-436e-ad25-211b3d89246e")
+			(uuid "a8a69870-1e71-4bac-a095-89b4c38c4230")
 		)
 		(pin "2"
-			(uuid "ff7e7c35-bc0b-4a26-b454-a3829805cafd")
+			(uuid "b685686b-d2cd-4469-86fd-e15c486ad6bd")
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:-BATT")
-		(at 66.04 130.81 180)
+		(lib_id "Device:R")
+		(at 157.48 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2791,30 +3022,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2c965dd0-e7ce-415c-aee1-167203289d7f")
-		(property "Reference" "#PWR018"
-			(at 66.04 127 0)
-			(hide yes)
+		(uuid "2c553be5-4c97-4a14-aa9a-63e49d2c7913")
+		(property "Reference" "R4"
+			(at 160.02 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "-BATT"
-			(at 66.04 135.89 0)
+		(property "Value" "1K"
+			(at 160.02 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 66.04 130.81 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 155.702 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2825,7 +3057,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 130.81 0)
+			(at 157.48 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2835,8 +3067,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 66.04 130.81 0)
+		(property "Description" "Resistor"
+			(at 157.48 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2847,12 +3079,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4566b204-e200-4086-8329-66930747e88a")
+			(uuid "8248f1c4-fc5e-4d19-be69-44663d5995a4")
+		)
+		(pin "2"
+			(uuid "2afaffe3-a347-4168-a162-1fac81a75b71")
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR018")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -2860,7 +3095,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 114.3 96.52 0)
+		(at 137.16 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2869,9 +3104,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "34ce2202-7a53-47e7-835d-e67b60c02b0f")
-		(property "Reference" "C3"
-			(at 118.11 95.2499 0)
+		(uuid "2e1b10f4-c564-4bce-84cc-5ca3a8b2ac9e")
+		(property "Reference" "C6"
+			(at 140.97 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2881,8 +3116,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 10V"
-			(at 118.11 97.7899 0)
+		(property "Value" "22µF"
+			(at 140.97 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2893,7 +3128,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 115.2652 100.33 0)
+			(at 138.1252 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2904,7 +3139,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 96.52 0)
+			(at 137.16 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2915,7 +3150,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 114.3 96.52 0)
+			(at 137.16 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2926,15 +3161,93 @@
 			)
 		)
 		(pin "2"
-			(uuid "ad575fb2-a4db-4534-9031-85ab55c724a9")
+			(uuid "c6b4b524-e3fd-4472-a590-15114834fb34")
 		)
 		(pin "1"
-			(uuid "e592f926-20ae-4a01-9e68-b4cb68869df4")
+			(uuid "6017ddf5-2275-4895-8c71-b70fff57aa05")
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "C3")
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 33.02 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42058534-5c94-4483-ad0d-4c056cb3d941")
+		(property "Reference" "#PWR06"
+			(at 33.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.02 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 33.02 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1b87daa-a7e4-488f-a625-50d37f7a6d02")
+		)
+		(instances
+			(project "Lipo Discharger"
+				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -2942,7 +3255,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 111.76 53.34 0)
+		(at 91.44 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2953,7 +3266,7 @@
 		(fields_autoplaced yes)
 		(uuid "4bd9d106-60f0-45e0-aa8e-613fbee8b767")
 		(property "Reference" "#PWR014"
-			(at 111.76 57.15 0)
+			(at 91.44 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2964,7 +3277,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 111.76 48.26 0)
+			(at 91.44 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2974,7 +3287,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 53.34 0)
+			(at 91.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2985,7 +3298,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 53.34 0)
+			(at 91.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2996,7 +3309,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 111.76 53.34 0)
+			(at 91.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3019,168 +3332,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 52.07 127 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "58f88ae3-c2b2-4084-9d71-4b13ed0cfeed")
-		(property "Reference" "C8"
-			(at 55.88 125.7299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 55.88 128.2699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 53.0352 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.07 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 52.07 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bfb51d9e-de13-40ec-b5df-b6d3f37a25d1")
-		)
-		(pin "2"
-			(uuid "e76f91b2-408d-4f35-8a30-ed5162736007")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 52.07 130.81 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63b615a6-e0cc-4983-ac98-78b012b1f0ee")
-		(property "Reference" "#PWR020"
-			(at 52.07 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 52.07 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.07 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 52.07 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dfc35174-adcd-4905-8638-c29307acb9a0")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
-		(at 78.74 45.72 0)
+		(at 29.21 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3191,7 +3344,7 @@
 		(fields_autoplaced yes)
 		(uuid "64abbdc5-29a2-415b-b15f-7467e4421e7c")
 		(property "Reference" "#PWR05"
-			(at 78.74 49.53 0)
+			(at 29.21 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3202,7 +3355,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 78.74 40.64 0)
+			(at 29.21 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3212,7 +3365,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 45.72 0)
+			(at 29.21 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3223,7 +3376,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 45.72 0)
+			(at 29.21 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3234,7 +3387,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 78.74 45.72 0)
+			(at 29.21 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3257,8 +3410,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 95.25 92.71 90)
+		(lib_id "power:PWR_FLAG")
+		(at 54.61 109.22 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3267,9 +3420,10 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "67c50876-82de-43a4-8f54-8f82cfa39113")
-		(property "Reference" "L1"
-			(at 95.25 87.63 90)
+		(uuid "76274870-8dfb-4b76-9ce3-ce27a9181f8b")
+		(property "Reference" "#FLG09"
+			(at 52.705 109.22 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3278,18 +3432,19 @@
 				)
 			)
 		)
-		(property "Value" "22uH"
-			(at 95.25 90.17 90)
+		(property "Value" "PWR_FLAG"
+			(at 50.8 109.2199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Bourns_SRR1260"
-			(at 95.25 92.71 0)
+		(property "Footprint" ""
+			(at 54.61 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3300,7 +3455,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 92.71 0)
+			(at 54.61 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3310,8 +3465,8 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
-			(at 95.25 92.71 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 54.61 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3320,17 +3475,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "1a5346e1-5fe8-43cc-8344-b71fb9d0cc56")
 		)
 		(pin "1"
-			(uuid "3e92ceb0-6ecc-41a5-a11c-c647add16964")
+			(uuid "ec39e322-fb31-4c68-9837-a1769fef9658")
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "L1")
+					(reference "#FLG09")
 					(unit 1)
 				)
 			)
@@ -3338,7 +3490,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 132.08 96.52 0)
+		(at 92.71 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3347,9 +3499,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6b3e312a-e183-4631-bd7f-3aff973f47cc")
-		(property "Reference" "C4"
-			(at 135.89 95.2499 0)
+		(uuid "8fedbfba-a9a5-4d44-9768-65df7277718f")
+		(property "Reference" "C3"
+			(at 96.52 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3359,8 +3511,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 10V"
-			(at 135.89 97.7899 0)
+		(property "Value" "22µF"
+			(at 96.52 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3371,7 +3523,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 133.0452 100.33 0)
+			(at 93.6752 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3382,7 +3534,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 96.52 0)
+			(at 92.71 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3393,7 +3545,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 132.08 96.52 0)
+			(at 92.71 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3403,16 +3555,16 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "a6862b3d-b003-45ac-b6cf-024b6dbb5663")
-		)
 		(pin "1"
-			(uuid "60527c6d-7f7d-40fa-876f-0a9a9d4c0437")
+			(uuid "3520ac28-b26d-4f3b-b3a9-6653dba19b10")
+		)
+		(pin "2"
+			(uuid "a9960d4a-c989-4b83-a902-b19b5eda1243")
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "C4")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -3420,643 +3572,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 52.07 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7986f14f-df8f-4f3f-893e-e716de6b5540")
-		(property "Reference" "#PWR019"
-			(at 52.07 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 52.07 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.07 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 52.07 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f01e100b-802d-4761-abcd-06b80dc0ea7e")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 132.08 104.14 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "79deced0-3071-47c8-ba97-a8de46aa8f4d")
-		(property "Reference" "#PWR010"
-			(at 132.08 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 132.08 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 132.08 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6fe27f3a-44f6-4760-be39-2a326edc443a")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 135.89 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8ae5965c-49c3-4e5b-8bf1-17af99d183c8")
-		(property "Reference" "C6"
-			(at 139.7 62.2299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 139.7 64.7699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 136.8552 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 135.89 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "72079573-6a21-432f-a352-9b88d57433c8")
-		)
-		(pin "2"
-			(uuid "2ceca4fc-7929-44b9-915a-ca0bd763327c")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 63.5 57.15 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9812cbc9-604d-422a-b340-93376c8e19a1")
-		(property "Reference" "D1"
-			(at 66.04 55.8799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D_TVS"
-			(at 66.04 58.4199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
-			(at 63.5 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 63.5 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6bda287e-09ba-410c-bf4a-71d0f37c408b")
-		)
-		(pin "1"
-			(uuid "f9475483-5c34-482e-bdd7-8581d4d52e32")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 123.19 74.93 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a05f246-3cc5-4e9b-b19b-dc918c6237a8")
-		(property "Reference" "#PWR015"
-			(at 123.19 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 123.19 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 123.19 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f68c32df-edfc-4cbe-af07-8adcde4e71e6")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 82.55 110.49 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9e75a17b-4392-4cff-894c-13c93f72c5dd")
-		(property "Reference" "#PWR08"
-			(at 82.55 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 82.55 115.57 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 82.55 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc4e8686-55c4-425f-8c6a-83a6b7009930")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 119.38 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ead7227-25dd-4956-ae08-f9e9a63eaa81")
-		(property "Reference" "R1"
-			(at 121.92 116.8399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 121.92 119.3799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 117.602 118.11 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 119.38 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "60042556-e1a8-4bca-bb16-ef74b191a1d4")
-		)
-		(pin "2"
-			(uuid "ee4bb328-3774-4155-95ad-4f39537b38d7")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 119.38 140.97 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a10edd15-13d8-4612-8359-e079070bfb83")
-		(property "Reference" "#PWR012"
-			(at 119.38 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 119.38 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 119.38 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c5bff1b9-f1b9-43a1-8222-f0a7bd49b0bb")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 138.43 55.88 0)
+		(at 143.51 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4067,7 +3583,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab6d65d4-cccb-4112-a9b5-432f3d0104ed")
 		(property "Reference" "#PWR016"
-			(at 138.43 59.69 0)
+			(at 143.51 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4078,7 +3594,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 138.43 50.8 0)
+			(at 143.51 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4088,7 +3604,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 55.88 0)
+			(at 143.51 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4099,7 +3615,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 55.88 0)
+			(at 143.51 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4110,7 +3626,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 138.43 55.88 0)
+			(at 143.51 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4133,8 +3649,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 63.5 46.99 0)
+		(lib_id "Device:C")
+		(at 73.66 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4142,31 +3658,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b3326dbb-7e10-4204-8c2a-3ed979c785bf")
-		(property "Reference" "#PWR04"
-			(at 63.5 50.8 0)
-			(hide yes)
+		(uuid "b3058e36-1daa-4af7-8eb3-e9f61c44b2f0")
+		(property "Reference" "C2"
+			(at 77.47 81.534 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+BATT"
-			(at 63.5 41.91 0)
+		(property "Value" "100nF"
+			(at 77.47 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 63.5 46.99 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 74.6252 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4177,7 +3693,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 46.99 0)
+			(at 73.66 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4187,8 +3703,261 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 63.5 46.99 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 73.66 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dce02299-e300-41ec-a99f-7c18c2c86553")
+		)
+		(pin "1"
+			(uuid "bcbd2e30-e1aa-4c8e-9b0d-bbcad1b69efb")
+		)
+		(instances
+			(project "Lipo Discharger"
+				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:AP63205WU")
+		(at 54.61 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b702124b-07cb-45da-abe5-7ced4ef45e72")
+		(property "Reference" "U1"
+			(at 54.61 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP63205WU-7"
+			(at 54.61 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
+			(at 54.61 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf"
+			(at 54.61 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"
+			(at 54.61 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8b3fee0f-e94a-42bb-991d-da527cce4279")
+		)
+		(pin "3"
+			(uuid "297419bf-2ac4-4e32-8ffb-0b494152ac5b")
+		)
+		(pin "5"
+			(uuid "9571194a-fbd6-4148-ae70-38180746e442")
+		)
+		(pin "1"
+			(uuid "880109f1-5bdc-4a2f-9222-de4429f6fed1")
+		)
+		(pin "4"
+			(uuid "91dee358-7920-41b3-bfe8-d37f71ee11f0")
+		)
+		(pin "6"
+			(uuid "a8c546e9-e760-4db9-9ceb-cbbc7f582568")
+		)
+		(instances
+			(project "Lipo Discharger"
+				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 80.01 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9194393-d0a9-4920-9abb-d48039d68113")
+		(property "Reference" "L1"
+			(at 80.01 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7µH"
+			(at 80.01 91.44 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_7.3x7.3_H4.5"
+			(at 80.01 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 80.01 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "12f7a708-31a2-4aba-be6c-48b11667a856")
+		)
+		(pin "1"
+			(uuid "049636ae-0bf7-4789-b2f0-11489bf95ecd")
+		)
+		(instances
+			(project "Lipo Discharger"
+				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 54.61 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0e111dd-3e82-4d2d-b635-8ec5eaf833b1")
+		(property "Reference" "#PWR04"
+			(at 54.61 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.61 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4199,7 +3968,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "19382510-0870-416b-b307-2e5fc13f8c84")
+			(uuid "d4c669d1-47b5-4643-ba9a-3133c8fdf0ae")
 		)
 		(instances
 			(project "Lipo Discharger"
@@ -4211,8 +3980,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-BATT")
-		(at 78.74 64.77 180)
+		(lib_id "Device:C")
+		(at 87.63 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4220,31 +3989,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b5d20f47-d817-4dbc-aa8e-38de92de1fbd")
-		(property "Reference" "#PWR06"
-			(at 78.74 60.96 0)
-			(hide yes)
+		(uuid "c7ff234a-1b4d-40ec-b170-616098d6587a")
+		(property "Reference" "C4"
+			(at 79.502 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "-BATT"
-			(at 78.74 69.85 0)
+		(property "Value" "22µF"
+			(at 79.502 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 78.74 64.77 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 88.5952 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4255,7 +4024,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 64.77 0)
+			(at 87.63 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4265,8 +4034,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 78.74 64.77 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 87.63 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4277,12 +4046,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "03340d93-544c-449b-97ab-ac9a12e6a2a9")
+			(uuid "cb43ef3c-a1a9-4b1b-b1ce-4a4262523055")
+		)
+		(pin "2"
+			(uuid "3f158d33-4c92-4947-be41-2c4855c7b64a")
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR06")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -4290,7 +4062,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:AMS1117-3.3")
-		(at 123.19 55.88 0)
+		(at 113.03 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4301,7 +4073,7 @@
 		(fields_autoplaced yes)
 		(uuid "cdf2321e-a545-4322-80cc-16c033fd720b")
 		(property "Reference" "U2"
-			(at 123.19 49.53 0)
+			(at 113.03 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4311,7 +4083,7 @@
 			)
 		)
 		(property "Value" "AMS1117-3.3"
-			(at 123.19 52.07 0)
+			(at 113.03 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4321,7 +4093,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 123.19 50.8 0)
+			(at 113.03 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4332,7 +4104,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 125.73 62.23 0)
+			(at 115.57 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4343,7 +4115,7 @@
 			)
 		)
 		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
-			(at 123.19 55.88 0)
+			(at 113.03 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4372,324 +4144,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 146.05 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cfa0b05e-ae01-4ea0-b367-6f7fbc10f04b")
-		(property "Reference" "#PWR011"
-			(at 146.05 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 146.05 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 146.05 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "565297a3-1d33-469c-91d5-0444f4853215")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 113.03 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0cc5c87-a921-49e9-b8b5-d77b0112710a")
-		(property "Reference" "C5"
-			(at 116.84 64.7699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 116.84 67.3099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 113.9952 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 113.03 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6adbb230-8b7d-4f7b-b000-cb6a965d8466")
-		)
-		(pin "2"
-			(uuid "f3337bbe-fd16-42d9-b65a-d96a9eee51f5")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 82.55 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d17237bd-0371-4c84-9808-89c5c6b25319")
-		(property "Reference" "#PWR013"
-			(at 82.55 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 82.55 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 82.55 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "da2d730e-2f29-43b1-b876-8e3407eacf46")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 114.3 105.41 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da06b2ce-27f9-4cf5-bbcc-8820c1de9d47")
-		(property "Reference" "#PWR09"
-			(at 114.3 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 114.3 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 114.3 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b828fb9f-1671-4d16-bb57-55d3d3225002")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 139.7 92.71 0)
+		(at 95.25 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4698,336 +4154,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e027a2d7-0827-4267-b515-abed60dbf214")
-		(property "Reference" "#FLG03"
-			(at 139.7 90.805 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 139.7 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 139.7 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1ddf070c-d88e-487f-95b5-36baee5b5bec")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MP2359DJ-LF-Z:MP2359DJ-LF-Z")
-		(at 60.96 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e65792e7-c77e-43dd-bfa8-4c9333885a64")
-		(property "Reference" "U1"
-			(at 60.96 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MP2359DJ-LF-Z"
-			(at 60.96 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Buck Switching Regulator IC Positive Adjustable 0.81V 1 Output 1.2A SOT-23-6 Thin, TSOT-23-6"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "Monolithic Power"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SNAPEDA_PACKAGE_ID" "14775"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "TSOT-23-6 Monolithic Power Systems"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/MP2359DJ-LF-Z/Monolithic+Power+Systems/view-part/?ref=eda"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "IPC 7351B"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PARTREV" "1.21"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MP2359DJ-LF-Z/Monolithic+Power+Systems/view-part/?ref=snap"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "MP2359DJ-LF-Z"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1222930&manufacturer=Monolithic Power&part_name=MP2359DJ-LF-Z&search_term=mp2359"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Monolithic Power Systems Inc."
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
-			(at 60.96 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "3"
-			(uuid "e56838b8-1408-4d6a-a8e4-6c1c18237e56")
-		)
-		(pin "4"
-			(uuid "3d0f9c4e-ca1b-48c9-a801-5bcee8ac8b93")
-		)
-		(pin "2"
-			(uuid "266db227-fe22-44e4-a649-c525e9c96172")
-		)
-		(pin "5"
-			(uuid "4d60f8c8-a076-4e6d-a9ab-4d8a7f0bdaa3")
-		)
-		(pin "1"
-			(uuid "54d30957-cacc-4152-8be0-261e1f25553c")
-		)
-		(pin "6"
-			(uuid "f0a36758-c7cb-4f35-9851-3457377c3af3")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 85.09 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e8d540a6-7640-4d55-9244-8bdf390c145a")
+		(uuid "d363da50-a199-4f08-9fac-81b17add32f9")
 		(property "Reference" "#FLG04"
-			(at 85.09 103.505 0)
+			(at 95.25 92.075 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5038,7 +4167,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 91.186 105.41 0)
+			(at 95.25 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5048,7 +4177,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 105.41 0)
+			(at 95.25 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5059,7 +4188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 105.41 0)
+			(at 95.25 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5070,7 +4199,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 85.09 105.41 0)
+			(at 95.25 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5081,7 +4210,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5290996b-80cb-4cf8-bd9c-a79b041c9000")
+			(uuid "c8eb1ee1-75b6-4e7a-bb1b-6dd6952068bd")
 		)
 		(instances
 			(project "Lipo Discharger"
@@ -5093,8 +4222,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 90.17 80.01 0)
+		(lib_id "power:GND")
+		(at 113.03 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5103,31 +4232,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "eaa1c1d1-1012-478e-8d6e-4d88628fadc7")
-		(property "Reference" "C2"
-			(at 93.98 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 93.98 81.2799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 91.1352 83.82 0)
+		(uuid "defa246f-0333-4246-b52a-e0cc9aa0f978")
+		(property "Reference" "#PWR01"
+			(at 113.03 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5137,68 +4244,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 90.17 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 90.17 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d7d76df8-25f9-4f16-82c9-faae6072df5e")
-		)
-		(pin "1"
-			(uuid "3a876ccc-9ebc-4538-a135-6c8e53b60cc6")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 39.37 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ed758739-a398-4bfe-bc89-7c992669dfb2")
-		(property "Reference" "#PWR07"
-			(at 39.37 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 39.37 72.39 0)
+		(property "Value" "GND"
+			(at 113.03 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5208,7 +4255,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 77.47 0)
+			(at 113.03 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5219,7 +4266,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 77.47 0)
+			(at 113.03 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5229,8 +4276,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 39.37 77.47 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5241,20 +4288,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "c006d43b-b04a-4ea9-95dc-c9a359c88afd")
+			(uuid "f29330e7-a556-4f3d-b6ff-f4b534cda9d5")
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#PWR07")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 82.55 87.63 270)
+		(lib_id "Device:LED")
+		(at 149.86 44.45 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5263,31 +4310,29 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ee443c91-1085-436d-b9e9-3394abb258b9")
-		(property "Reference" "D2"
-			(at 85.09 86.0424 90)
+		(uuid "e12eb888-9318-4a8d-831e-8c066ae9edaa")
+		(property "Reference" "D19"
+			(at 151.4475 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "SS34"
-			(at 85.09 88.5824 90)
+		(property "Value" "LED"
+			(at 151.4475 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
-			(at 82.55 87.63 0)
+		(property "Footprint" "LED_SMD:LED_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
+			(at 149.86 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5298,7 +4343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 87.63 0)
+			(at 149.86 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5308,8 +4353,19 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
-			(at 82.55 87.63 0)
+		(property "Description" "Light emitting diode"
+			(at 149.86 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 149.86 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5320,15 +4376,94 @@
 			)
 		)
 		(pin "1"
-			(uuid "73ed21a8-99b5-45f9-a0a5-07ccf1aa70b5")
+			(uuid "2f53fcec-7b1e-491b-887b-f936b7c45a76")
 		)
 		(pin "2"
-			(uuid "1b17230d-a9f0-41ea-a164-21c7c1881ab6")
+			(uuid "0102be28-f9d8-4b88-abd7-9ec9a120b5d9")
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "D2")
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 29.21 90.17 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e88f7e6b-9015-4129-9b7b-8e8761c2734c")
+		(property "Reference" "#FLG03"
+			(at 27.305 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 25.4 90.1699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 29.21 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5ed0b5e3-27f7-4efe-9d62-60150199fe2d")
+		)
+		(instances
+			(project "Lipo Discharger"
+				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -5336,7 +4471,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 78.74 55.88 0)
+		(at 33.02 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5347,7 +4482,7 @@
 		(fields_autoplaced yes)
 		(uuid "eeee387c-b919-4699-97c2-2f02beac4bbb")
 		(property "Reference" "C1"
-			(at 82.55 54.6099 0)
+			(at 36.83 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5358,7 +4493,7 @@
 			)
 		)
 		(property "Value" "10uf 35V"
-			(at 82.55 57.1499 0)
+			(at 36.83 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5369,7 +4504,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 79.7052 59.69 0)
+			(at 33.9852 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5380,7 +4515,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 55.88 0)
+			(at 33.02 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5391,7 +4526,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 78.74 55.88 0)
+			(at 33.02 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5417,85 +4552,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 43.18 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f0d12e03-2882-49e7-b904-ce92dfa908be")
-		(property "Reference" "#FLG02"
-			(at 43.18 81.915 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 46.482 76.962 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 43.18 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ff37da4c-c421-4709-91a4-b17deb14f600")
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 119.38 130.81 0)
+		(lib_id "Device:D")
+		(at 113.03 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5504,31 +4562,29 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fc9d37e8-f951-45f3-bc73-ffe79df3bcdd")
-		(property "Reference" "R2"
-			(at 121.92 129.5399 0)
+		(uuid "fa7f6797-b0ad-46e9-9587-26e25dd48c23")
+		(property "Reference" "D1"
+			(at 113.03 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "20k"
-			(at 121.92 132.0799 0)
+		(property "Value" "SS34"
+			(at 113.03 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 117.602 130.81 90)
+		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
+			(at 113.03 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5539,7 +4595,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 130.81 0)
+			(at 113.03 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5549,8 +4605,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 119.38 130.81 0)
+		(property "Description" "Diode"
+			(at 113.03 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5560,24 +4616,46 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "f289baf4-84ec-4c1a-8732-8a5dd80d3913")
+		(property "Sim.Device" "D"
+			(at 113.03 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 113.03 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "488449f9-0bda-40bd-adb6-baafd3cad0e7")
+			(uuid "049979eb-2926-47e2-9965-dc9bfcf56ca3")
+		)
+		(pin "1"
+			(uuid "67e7366b-8d71-40be-b5f8-f0ef2852f367")
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(reference "R2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 166.37 81.28)
-		(size 113.03 8.89)
+		(at 114.3 149.86)
+		(size 19.05 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5590,9 +4668,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "12efe7b8-fbb0-42e1-bcdd-f658743567fa")
-		(property "Sheetname" "Fan"
-			(at 166.37 80.5684 0)
+		(uuid "0a32a5a8-d27c-468f-88ca-92468d2c5329")
+		(property "Sheetname" "node4"
+			(at 114.3 149.1484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5602,8 +4680,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Fan.kicad_sch"
-			(at 166.37 90.7546 0)
+		(property "Sheetfile" "node.kicad_sch"
+			(at 114.3 168.2246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5611,6 +4689,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "ADC_Px" input
+			(at 133.35 153.67 0)
+			(uuid "b82a5b5f-eed2-4948-bfcc-627f79614c13")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GATE_Px" input
+			(at 133.35 157.48 0)
+			(uuid "e6acfe12-625d-4243-99fb-a3f79eb8be5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -5622,8 +4720,8 @@
 		)
 	)
 	(sheet
-		(at 166.37 101.6)
-		(size 113.03 10.16)
+		(at 114.3 77.47)
+		(size 19.05 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5636,9 +4734,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "1c684a22-57cd-4efd-a463-5ea914bd8558")
-		(property "Sheetname" "Discharge/LED"
-			(at 166.37 100.8884 0)
+		(uuid "0ac4b2fa-f115-41e5-989a-59a1512212b6")
+		(property "Sheetname" "node1"
+			(at 114.3 76.7584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5648,8 +4746,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Discharge_Ch1.kicad_sch"
-			(at 166.37 112.3446 0)
+		(property "Sheetfile" "node.kicad_sch"
+			(at 114.3 95.8346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5659,102 +4757,96 @@
 				(justify left top)
 			)
 		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 166.37 119.38)
-		(size 114.3 8.89)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "29073279-b891-4947-8683-5349b093d708")
-		(property "Sheetname" "LED_Driver"
-			(at 166.37 118.6684 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(pin "ADC_Px" input
+			(at 133.35 81.28 0)
+			(uuid "c64dbea5-d974-49e5-8477-fb4e382ba5f3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify right)
 			)
 		)
-		(property "Sheetfile" "LED_Driver.kicad_sch"
-			(at 166.37 128.8546 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(pin "GATE_Px" input
+			(at 133.35 85.09 0)
+			(uuid "80b07bcb-8f9d-4238-9763-c94543d408e5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Lipo Discharger"
-				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 166.37 64.77)
-		(size 115.57 10.16)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "36eaefb5-6314-4806-af05-77b5568cedbb")
-		(property "Sheetname" "USB-C"
-			(at 166.37 64.0584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "CH340C.kicad_sch"
-			(at 166.37 75.5146 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
+				(justify right)
 			)
 		)
 		(instances
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 101.6)
+		(size 19.05 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "518e96b0-198c-4080-944a-2cba46bf3a4d")
+		(property "Sheetname" "node2"
+			(at 114.3 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "node.kicad_sch"
+			(at 114.3 119.9646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ADC_Px" input
+			(at 133.35 105.41 0)
+			(uuid "a7ea2836-be48-4b9c-833c-1246e5f571cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GATE_Px" input
+			(at 133.35 109.22 0)
+			(uuid "aa2e4307-99cb-4b25-828d-9123ae1e69d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Lipo Discharger"
+				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
+					(page "4")
 				)
 			)
 		)
@@ -5801,6 +4893,138 @@
 			(project "Lipo Discharger"
 				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 175.26)
+		(size 19.05 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "adccef88-dd3f-4c10-ab92-471ffc6d19d6")
+		(property "Sheetname" "node5"
+			(at 114.3 174.5484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "node.kicad_sch"
+			(at 114.3 193.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ADC_Px" input
+			(at 133.35 179.07 0)
+			(uuid "118aba37-6e79-4778-985f-35ae48c3e467")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GATE_Px" input
+			(at 133.35 182.88 0)
+			(uuid "87149a73-446d-406e-88f6-93b5e61c218d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Lipo Discharger"
+				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 125.73)
+		(size 19.05 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e6e59bfa-6e9b-43c6-acfb-3424a1554b80")
+		(property "Sheetname" "node3"
+			(at 114.3 125.0184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "node.kicad_sch"
+			(at 114.3 144.0946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ADC_Px" input
+			(at 133.35 129.54 0)
+			(uuid "5ca99f35-c2fe-44a2-8129-2db4583dfb76")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GATE_Px" input
+			(at 133.35 133.35 0)
+			(uuid "984e37ee-e946-47f7-a13a-0511ed989230")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Lipo Discharger"
+				(path "/cb0d3892-3b06-4da7-9e89-06e059fca708"
+					(page "5")
 				)
 			)
 		)

@@ -1,0 +1,52 @@
+Model: AssemblyV1.0.0.SLDASM
+Project name: Project(1)
+Config name: Default
+Project path: C:\Users\Luca Notti\Desktop\Lipo Discharger\Solidworks\1\1.xmlconfig
+Status: Finished
+
+Number of cells:
+    Total cells: 44375
+    Fluid cells: 32492
+    Solid cells: 11883
+    Fluid cells containing solids: 10758
+
+
+Geometry preparation finished: 12:50:09
+Geometry preparation time: 00:00:01
+Solver CPU time: 00:01:12
+Iterations: 241
+Travels: 3.77626
+Physical time: 0.000000e+00 s
+Current time step: 0.000000e+00 s
+Last iteration finished: 12:51:19
+CPU time per last iteration: 00:00:00
+CPU time left: 00:00:01
+Iterations per 1 travel: 64
+
+Goals
+    Name | Unit (SI) | Value           | Progress  | Critetia        | Delta           | Use in convergence
+
+Project details
+    Default fluids: Air
+    Analysis type: External
+    Heat conduction in solids: On
+    Radiation: Off
+    Time dependent: Off
+    Gravitational effects: On
+    Flow type: Laminar and turbulent
+    Cavitation: Off
+    Hign Mach number flow: On
+    Free surface: Off
+    Structural: Off
+    Electromagnetism: Off
+
+System info
+    Product: Flow Simulation 2026  x64 / 7071 / SOLVER ver. efd_dev.5608_04.02.2022+HMN_Inlet_Rework_V1+HMN_Inlet_Rework_V2
+    CAD version: SOLIDWORKS 2026 SP2.1
+    Computer name: LNOTTI-LEGION
+    User name: Luca Notti
+    Operating system: Windows 11 (or higher) (Version 10.0.26200)
+    Processors: Intel(R) Core(TM) Ultra 9 275HX
+    Number of cores: 24
+    Memory: 17681 MB / 32189 MB
+
