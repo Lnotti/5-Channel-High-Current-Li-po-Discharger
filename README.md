@@ -1,6 +1,6 @@
 # 5 Channel High Current LiPo Storage Discharger
 
-A PCB designed to discharge 6S LiPo battery packs to storage voltage (3.8V per cell / 22.8V total) across up to 5 independent channels simultaneously.
+A PCB designed to discharge 6S LiHV battery packs to storage voltage (3.8V per cell / 22.8V total) across up to 5 independent channels simultaneously.
 
 ## Overview
 
@@ -10,35 +10,84 @@ Each of the 5 channels accepts a 6S pack via an XT60 connector and independently
 
 ## Status
 
-The first physical prototype has been sent off for manufacture. This repository will be updated as boards arrive and testing begins. Additional revisions are planned based on real world testing results.
+Version 0.1.1 is a complete board redesign addressing multiple hardware issues identified during review of the 0.1.0 prototype. The revised board has been submitted for manufacture. Testing and firmware development are ongoing.
 
 ## Hardware
 
 - STM32F103C8T6 microcontroller
-- PCA9685 16 channel PWM driver for RGB status LEDs
 - Active MOSFET load per channel with wirewound power resistors
-- 5V buck converter and 3.3V LDO onboard power supply
+- Buck converter and 3.3V LDO onboard power supply
 - USB-C port for firmware flashing via DFU bootloader
 - Active cooling via 40mm 5V fan
-- Per channel RGB status LED indicating discharge state
+- Power status LED for supply rail debugging
 - SWD header for live debugging
+- Multiple STM32 connectivity options: USB, I2C, ST-Link, UART, DFU
 
 ## Specifications
 
-- Input: 6S LiPo (22.2V - 25.2V)
+- Input: 6S LiHV (22.8V - 26.1V)
 - Channels: 5 independent
 - Discharge current: approximately 1A per channel
 - Target storage voltage: 22.8V (3.8V per cell)
 - Connector: XT60 female PCB mount
 - Board dimensions: 160 x 110mm
 
+## Version History
+
+### v0.1.1 — Complete Board Redesign
+*Current version*
+
+A full redesign addressing hardware errors found during schematic and layout review of v0.1.0.
+
+**Bug fixes:**
+- Corrected footprints for large wirewound power resistors which were wrong in v0.1.0
+- Fixed STM32F103C8T6 footprint which was incorrect in v0.1.0
+- Replaced buck converter with a higher rated part after identifying that the original selection would be insufficient for LiHV pack voltages (26.1V max vs 25.2V assumed for standard LiPo)
+- Updated voltage divider resistor values (1M / 120k) to bring the ADC sense voltage within safe range for LiHV full charge voltage — previous values would have exceeded the STM32 3.3V ADC input limit at 26.1V
+
+**Design changes:**
+- Discharge resistors repositioned to the center of the board based on thermal simulation results for improved heat distribution
+- Removed per-channel RGB LEDs to simplify bring-up and reduce scope; power system debugging is now the immediate priority
+- Added power rail status LED to aid debugging of the onboard supply
+- Added multiple STM32 connectivity options: USB, I2C, ST-Link, UART, DFU headers
+- Removed oversized battery net traces; 1A continuous current does not require large copper pours
+- Redesigned discharge channels using hierarchical sheets for layout uniformity across all 5 channels and easier future edits
+- General board layout cleanup and component alignment
+
+**Known limitations:**
+- RGB per-channel status LEDs removed; may be reintroduced in a later revision once core functionality is validated
+- Firmware development ongoing
+
+---
+
+### v0.1.0 — Initial Prototype
+*First PCB submission. Multiple hardware errors identified prior to and during bring-up.*
+
+- Initial 5-channel discharge board design
+- STM32F103C8T6 microcontroller
+- PCA9685 16 channel PWM driver for RGB status LEDs
+- Per channel RGB status LED
+- USB-C DFU bootloader
+- SWD debug header
+- 160 x 110mm board
+
+**Issues identified:**
+- Wrong footprints for wirewound power resistors
+- Wrong STM32 footprint
+- Buck converter underrated for LiHV input voltage
+- Voltage divider ratio unsafe for LiHV full charge voltage on STM32 ADC
+- Board layout not uniform across discharge channels
+
+---
+
 ## Planned Revisions
 
 - Case design with integrated fan mounting and ventilation
-- Thermal testing and validation
+- Thermal testing and validation on physical hardware
 - Firmware development and testing
+- Potential reintroduction of per-channel RGB status LEDs
 - Potential support for additional cell counts
-- Further refinement based on prototype testing
+- Further refinement based on prototype testing results
 
 ## Repository Contents
 
