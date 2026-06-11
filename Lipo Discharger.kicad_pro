@@ -632,7 +632,7 @@
       "idf": "",
       "netlist": "",
       "plot": "Gerbers/",
-      "specctra_dsn": "Autorouter/16.dsn",
+      "specctra_dsn": "Autorouter/autorouter_v34.dsn",
       "vrml": ""
     },
     "page_layout_descr_file": ""
