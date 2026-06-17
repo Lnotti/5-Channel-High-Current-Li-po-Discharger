@@ -8,6 +8,18 @@ Leaving LiPo packs fully charged for extended periods degrades cell chemistry ov
 
 Each of the 5 channels accepts a 6S pack via an XT60 connector and independently discharges it to 22.8V, cutting off automatically when the target is reached. Channels are fully isolated from each other so packs at different voltages can be discharged simultaneously without risk.
 
+## Problems with current solutions
+I have a lipo charger that doubles as a lipo discharger, but it falls short in many aspects.
+- Cost ($100+)
+- Only two channels
+- Discharge current only 0.2A max
+- Slows down immensely close to the end of discharge cycle
+I also have small lipo discharger that clip onto individual packs that also fall short
+- Takes 3+ hours to discharge to storage
+- Only has a light to let me know that it has finished (I forget about them since they are so small)
+- High leakage current
+- High leakage current combined with the time taken to discharge combined with their forgettability leads to frequent overdischarging making me plug them back in to charge ruining the ease
+
 ## Status
 
 Version 0.1.1 is a complete board redesign addressing multiple hardware issues identified during review of the 0.1.0 prototype. The revised board has been submitted for manufacture. Testing and firmware development are ongoing.
@@ -44,6 +56,7 @@ A full redesign addressing hardware errors found during schematic and layout rev
 - Fixed STM32F103C8T6 footprint which was incorrect in v0.1.0
 - Replaced buck converter with a higher rated part after identifying that the original selection would be insufficient for LiHV pack voltages (26.1V max vs 25.2V assumed for standard LiPo)
 - Updated voltage divider resistor values (1M / 120k) to bring the ADC sense voltage within safe range for LiHV full charge voltage — previous values would have exceeded the STM32 3.3V ADC input limit at 26.1V
+- Updated voltage dividers to higher values to reduce current draw, as to not discharge batteries less than their storage voltage after discharging process is complete.
 
 **Design changes:**
 - Discharge resistors repositioned to the center of the board based on thermal simulation results for improved heat distribution
@@ -56,7 +69,9 @@ A full redesign addressing hardware errors found during schematic and layout rev
 
 **Known limitations:**
 - RGB per-channel status LEDs removed; may be reintroduced in a later revision once core functionality is validated
-- Firmware development ongoing
+- Unsure of how precise the mosfet discharge current in relation to gate voltage will be, this may create issues with precision at the end of a discharge cycle limiting speed.
+- Firmware development not yet started
+- Unsure of what control loop I will use to handle getting to storage voltage at a consistent current with no overshoot
 
 ---
 
