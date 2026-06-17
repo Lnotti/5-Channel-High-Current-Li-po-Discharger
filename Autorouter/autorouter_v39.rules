@@ -1,0 +1,65 @@
+
+(rules PCB autorouter_v39.dsn
+  (snap_angle 
+    fortyfive_degree
+  )
+  (rule
+    (width 200.0)
+    (clearance 200.0)
+    (clearance 100.0 (type smd_to_turn_gap))
+    (clearance 50.0 (type smd))
+    (clearance 200.0 (type "kicad_default"))
+  )
+  (padstack "Via[0-1]_700:300_um"
+    (shape
+      (circle F.Cu 700.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 700.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_700:300_um" "Via[0-1]_700:300_um" default
+  )
+  (via 
+    "Via[0-1]_700:300_um-kicad_default" "Via[0-1]_700:300_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_700:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_700:300_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    +3.3V GND "FAN_CTRL" "Net-(Q6-B)" "Net-(Q3-G)" "GATE_P3" "Net-(D14-A)" "ADC_P1"
+    "Net-(U3-VDDA)" "unconnected-(U3-PC13-Pad2)" "unconnected-(U3-PC14-Pad3)" "unconnected-(U3-PC15-Pad4)" "/STM32/HSE_IN" "/STM32/HSE_OUT" /STM32/NRST "ADC_P2"
+    "ADC_P3" "ADC_P4" "ADC_P5" "GATE_P1" "GATE_P2" "unconnected-(U3-PB0-Pad18)" "unconnected-(U3-PB1-Pad19)" "unconnected-(U3-PB2-Pad20)"
+    "/STM32/I2C2_SCL" "/STM32/I2C2_SDA" "unconnected-(U3-PB12-Pad25)" "unconnected-(U3-PB13-Pad26)" "unconnected-(U3-PB14-Pad27)" "unconnected-(U3-PB15-Pad28)" "GATE_P4" "GATE_P5"
+    "/STM32/USB_D-" "/STM32/USB_D+" /STM32/SWDIO /STM32/SWCLK "unconnected-(U3-PA15-Pad38)" "unconnected-(U3-PB3-Pad39)" "unconnected-(U3-PB4-Pad40)" "unconnected-(U3-PB5-Pad41)"
+    "/STM32/USART1_TX" "/STM32/USART1_RX" "Net-(U3-BOOT0)" "unconnected-(U3-PB8-Pad45)" "unconnected-(U3-PB9-Pad46)" "Net-(D13-K)" +5V "Net-(Q1-G)"
+    "Net-(U1-BST)" "Net-(D18-A)" "Net-(U1-SW)" "Net-(R12-Pad2)" "Net-(Q1-D)" "Net-(Q2-G)" "Net-(Q2-D)" "Net-(D19-K)"
+    +BATT "Net-(D15-A)" "Net-(R18-Pad1)" "Net-(D16-A)" "Net-(R24-Pad2)" "Net-(Q3-D)" "Net-(R12-Pad1)" "Net-(Q5-G)"
+    "Net-(Q5-D)" "unconnected-(J2-CC1-PadA5)" "unconnected-(J2-SBU1-PadA8)" "unconnected-(J2-CC2-PadB5)" "unconnected-(J2-SBU2-PadB8)" "unconnected-(J2-SHIELD-PadSH)_3" "unconnected-(J2-SHIELD-PadSH)" "unconnected-(J2-SHIELD-PadSH)_2"
+    "unconnected-(J2-SHIELD-PadSH)_1" "Net-(R36-Pad1)" "Net-(R36-Pad2)" "Net-(Q4-G)" "Net-(Q4-D)" "Net-(R30-Pad1)" "Net-(D17-A)" "Net-(R18-Pad2)"
+    "Net-(R24-Pad1)" "Net-(R30-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
