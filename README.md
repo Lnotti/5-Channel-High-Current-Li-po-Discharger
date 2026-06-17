@@ -9,11 +9,13 @@ Leaving LiPo packs fully charged for extended periods degrades cell chemistry ov
 Each of the 5 channels accepts a 6S pack via an XT60 connector and independently discharges it to 22.8V, cutting off automatically when the target is reached. Channels are fully isolated from each other so packs at different voltages can be discharged simultaneously without risk.
 
 ## Problems with current solutions
+
 I have a lipo charger that doubles as a lipo discharger, but it falls short in many aspects.
 - Cost ($100+)
 - Only two channels
 - Discharge current only 0.2A max
 - Slows down immensely close to the end of discharge cycle
+
 I also have small lipo discharger that clip onto individual packs that also fall short
 - Takes 3+ hours to discharge to storage
 - Only has a light to let me know that it has finished (I forget about them since they are so small)
